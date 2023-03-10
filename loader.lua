@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded()
 
 local fortnite = {
-    [9551640993] = "fruit%20warriors"
+    [12192552089] = "fruit%20warriors"
 }
 
 
@@ -10,6 +10,5 @@ for i, v in pairs(fortnite) do
 	    loadstring(game:HttpGet("https://raw.githubusercontent.com/FortniteGamer696/fortnite-hub/main/scripts/"..v..".lua", true))()
 	 else
 	     game.Players.LocalPlayer:Kick("Game not supported.")
-	     wait(9e9)
 	end
 end
