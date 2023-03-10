@@ -1,7 +1,7 @@
-repeat wait(1) until game:IsLoaded()
+repeat wait() until game:IsLoaded()
 
 local fortnite = {
-    [9551640993] = "mining%20simulator%202"
+    [9551640993] = "fruit%20warriors"
 }
 
 
