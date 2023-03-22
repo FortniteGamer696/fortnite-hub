@@ -31,7 +31,7 @@ local ThemeManager = {} do
 		end
 
 		self:ThemeUpdate()
-    Window:SetWindowTitle([[Fortnite <font color="]] .. rgb255RichText(Library.AccentColor) .. [[">Hub</font>]])
+       
 	end
 
 	function ThemeManager:ThemeUpdate()
@@ -45,6 +45,7 @@ local ThemeManager = {} do
 
 		self.Library.AccentColorDark = self.Library:GetDarkerColor(self.Library.AccentColor);
 		self.Library:UpdateColorsUsingRegistry()
+		Window:SetWindowTitle([[Fortnite <font color="]] .. rgb255RichText(self.Library.AccentColor) .. [[">Hub</font>]])
 	end
 
 	function ThemeManager:LoadDefault()		
